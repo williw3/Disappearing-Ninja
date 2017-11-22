@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dissapearing Ninja</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('img').click(function(){
+				$(this).fadeOut(2000);
+			})
+			$('button').click(function(){
+				$('img').show();
+			})
+		})
+		
+	</script>
+	<style type="text/css">
+   		img{
+   			border: 2px solid black;
+   			margin: 10px;
+   		}
+   		button{
+   			width: 432px;
+   			height: 80px;
+   			margin-left: 238px;
+   			border-radius: 10px;
+   			color: green;
+   			font-size: 18px;
+   			box-shadow: 2px 2px 5px green;
+   		}
+	
+	</style>
+	
+</head>
+<body>
+	<!-- <div id="container"> -->
+		<div id="pic">
+			<img src="sloth.jpg" alt="Sloth" height="200" width="200">
+			<img src="sloth.jpg" alt="Sloth" height="200" width="200">
+			<img src="sloth.jpg" alt="Sloth" height="200" width="200">
+			<img src="sloth.jpg" alt="Sloth" height="200" width="200">
+		</div>
+		<div id="pic">
+			<img src="sloth.jpg" alt="Sloth" height="200" width="200">
+			<img src="sloth.jpg" alt="Sloth" height="200" width="200">
+			<img src="sloth.jpg" alt="Sloth" height="200" width="200">
+			<img src="sloth.jpg" alt="Sloth" height="200" width="200">
+		</div>
+		<button id="restore">Click Here to Restore</button>
+	<!-- </div> -->
+
+</body>
+</html>
